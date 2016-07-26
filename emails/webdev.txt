@@ -1,5 +1,3 @@
-Hi,
-
 Hi,  我是 Mozilla 台灣社群的 Irvin
 
 歡迎您加入 Mozilla 社群的大家族。Mozilla 是為維護網路的自由與創新的非營利組織，也是 Firefox 的開發者，更是一群愛好網路的人。
@@ -25,8 +23,6 @@ Hi,  我是 Mozilla 台灣社群的 Irvin
 網站開發方面，分為本地的社群網站 moztw.org 及 mozilla.org 旗下各專案，以下為您分別說明。
 
 
-=== Mozilla 各網站的開發資訊 ===
-
 Mozilla 各網站的開發資訊
 
   - 這邊有 Mozilla 各專案的網站開發相關資訊，你可以參考你熟悉的語言，聯絡各專案負責人： https://wiki.mozilla.org/Webdev/GetInvolved
@@ -40,8 +36,7 @@ Mozilla 各網站的開發資訊
   - 最後，與您的師父一起，從 github 當中 fork 出該 bug 的頁面，您就可以開始練功打怪了。
 
 
-
-=== 台灣的社群計畫 ===
+台灣的社群計畫
 
   - MozTW 網站 http://moztw.org 是由社群所架設，提供 Firefox 等軟體下載及活動頁的網站，其下有討論區。討論區為 phpbb 的系統，是繁中用戶討論發問的主要平台。以上 moztw.org 的總使用量，平均每個月約有 35~40 萬不重複訪客，90 萬 PV。
 
