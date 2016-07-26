@@ -15,18 +15,17 @@ Hi,  我是 Mozilla 台灣社群的 Irvin。
 香港社群不定期會舉行一些社群聚會，到時歡迎來聊聊啊。 
 
 
+
 === 美術設計方面 ===
 
 目前 Mozilla 國際上的視覺設計由創意團隊負責，負責處理從圖示、行銷活動、網站設計等大大小小的專案。若您有興趣加入，以下是幾個您能幫忙的方式：
-
 在 Twitter follow 創意團隊: http://www.twitter.com/mozcreative 
--- 創意團隊會在這邊張貼一些設計作品，但通常我們會把這個地方當作張貼與 Mozilla 的設計有關的主題的資訊頻道，當中也會有些啟發我們的設計。
 
+- 創意團隊會在這邊張貼一些設計作品，但通常我們會把這個地方當作張貼與 Mozilla 的設計有關的主題的資訊頻道，當中也會有些啟發我們的設計。
 到 wiki 看看其他資訊: http://wiki.mozilla.org/Design
--- 您可以在 wiki 上找到各種可以參與貢獻的專案鏈結以及其他資源。內容將不定時更新，請記得常常回來看看。
 
-此外，只要三個步驟，您就可以製作出 Firefox 的佈景主題，詳細說明於此:
-https://addons.mozilla.org/zh-TW/developers/docs/themes
+- 您可以在 wiki 上找到各種可以參與貢獻的專案鏈結以及其他資源。內容將不定時更新，請記得常常回來看看。
+此外，只要三個步驟，您就可以製作出 Firefox 的佈景主題，詳細說明於此: https://addons.mozilla.org/zh-TW/developers/docs/themes
 
 
 本地的社群計畫
@@ -37,25 +36,24 @@ https://addons.mozilla.org/zh-TW/developers/docs/themes
 
 # Foxmosa
 
-Foxmosa 是我們的吉祥物，中文名稱是狐耳摩莎，暱稱小莎，這是她的個人網頁：
-http://moztw.org/foxmosa
+Foxmosa 是我們的吉祥物，中文名稱是狐耳摩莎，暱稱小莎，這是她的個人網頁： http://moztw.org/foxmosa
 
--- Foxmosa 目前的主要插畫家有電腦君、Goescat…等人，在以下 PDF 中，我們彙整了這個角色一些過去的相關作品：
+- Foxmosa 目前的主要插畫家有電腦君、Goescat…等人，在以下 PDF 中，我們彙整了這個角色一些過去的相關作品：
 https://www.dropbox.com/s/js64y5e3sbhdjpu/foxmosa%20%E7%B9%AA%E5%B8%AB%E6%8B%9B%E5%8B%9F.pdf
 
--- MozTW 歡迎你自由以 Foxmosa 這個角色為主題來創作，唯一的限制是你的作品需要與大家自由分享，且不能有商業應用。（請採用創用 CC 姓名標示-非商業性-相同方式分享-3.0 TW 授權釋出）
+- MozTW 歡迎你自由以 Foxmosa 這個角色為主題來創作，唯一的限制是你的作品需要與大家自由分享，且不能有商業應用。（請採用創用 CC 姓名標示-非商業性-相同方式分享-3.0 TW 授權釋出）
 
 
 # 網頁及平面美工
 
--- http://moztw.org 網站內所有圖片、舉辦活動時的頁面圖畫（例如 Party、年節賀卡……），以及實體海報等等，均需要各位來協助繪製，不定期會有相關需求，如果您有興趣，請回信告知，在需要繪圖時，我們就會以信件跟你聯絡。
+- http://moztw.org 網站內所有圖片、舉辦活動時的頁面圖畫（例如 Party、年節賀卡……），以及實體海報等等，均需要各位來協助繪製，不定期會有相關需求，如果您有興趣，請回信告知，並加入 Telegram 上的設計聊天室（ http://moztw.org/tg 選擇 "設計" 頻道），在需要繪圖時，我們就會以上管道討論。
 
--- 例如以下兩張我們參加全球年會時的海報：
+- 例如以下兩張我們參加全球年會時的海報：
 https://www.dropbox.com/s/6r37jit1dxjsxld/Mozilla%20summit%202010%20MozTW.png
 https://www.dropbox.com/s/li0aickd9epodzm/Mozilla%20summit%202010%20Taiwan.png
 
--- 以及先前的瀏覽器歷史海報（由 Mozilla 與 Mozilla Japan 製作，我們進行翻譯）：
-瀏覽器歷史 2012  https://www.dropbox.com/s/d0lfm5g61lvytjh/2012_history-foxmosa-A3_zh-tw-90x120.png
+- 以及先前的瀏覽器歷史海報（由 Mozilla 與 Mozilla Japan 製作，我們進行翻譯）：
+瀏覽器歷史 2012 https://www.dropbox.com/s/d0lfm5g61lvytjh/2012_history-foxmosa-A3_zh-tw-90x120.png
 
 
 
