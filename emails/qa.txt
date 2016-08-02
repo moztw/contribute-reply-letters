@@ -15,7 +15,7 @@ Hi,  我是 Mozilla 台灣社群的 Toby
 香港社群不定期會舉行一些社群聚會，到時歡迎來聊聊啊。 
 
 
-== QA 測試工作 方面 ==
+=== QA 測試專案 ===
 
 Mozilla 的 QA 工作，最簡單的貢獻方法是在日常生活中使用全系列的 Nightly 版 Firefox，並在發現問題時到 Bugzilla 回報 Bug。
   - Firefox Nightly 下載： http://nightly.mozilla.org/
@@ -32,7 +32,7 @@ Mozilla QA 團隊的主要聯絡管道（英文為主）為 IRC 與郵件群組�
 Mozilla QA 的專案平台為 QMO，上面提供各專案 QA 相關資訊，請先閱讀，並可按照說明直接聯繫、加入相關管道以參與： https://quality.mozilla.org/docs/misc/how-can-i-help-test/
 
 
-=== One and Done ===
+# One and Done
 
 QA 團隊的 One and Done 系統，可以讓你按照擁有的空閒時間，提供各種不同的任務讓你執行。歡迎在有空時登入 One and Done 並且按照說明解任務： https://oneanddone.mozilla.org/
 （如果在測試中途發現問題時，請記得寫信（英文）給到每個任務的負責人喔） 
@@ -41,7 +41,7 @@ QA 團隊的 One and Done 系統，可以讓你按照擁有的空閒時間，提
 以下是 Mozilla 各產品的個別 QA 資訊與管道
 
 
-=== Desktop Firefox ===
+# Desktop Firefox
   - 安裝 Nightly 測試版，並協助回報 Bug： http://nightly.mozilla.org/
   - 安裝 Test Pilot 並參與不定期使用者問卷： https://testpilot.mozillalabs.com/
   - 參加每週五的全球 Testday： https://quality.mozilla.org/tag/test-day/
@@ -49,27 +49,23 @@ QA 團隊的 One and Done 系統，可以讓你按照擁有的空閒時間，提
   - 追蹤 dev-quality 郵件群組： https://lists.mozilla.org/listinfo/dev-quality
 
 
-=== Android Firefox ===
+# Android Firefox
   - 使用 Nightly 版、協助回報 Bug： https://quality.mozilla.org/docs/mobile-firefox/how-to-install-fennec-nightly-builds/
   - 追蹤 QA 郵件群組： https://mail.mozilla.org/listinfo/android-mobile-nightly-testers
 
 
-=== Firefox OS ===
-  - 加入 B2G QA 郵件群組： https://wiki.mozilla.org/B2G/QA
-  - IRC #appsqa、#fxosqa 頻道
-
-
-=== 網頁 WebQA ===
+# 網頁 WebQA
   - 掛 IRC #mozwebqa
   - 作 exploratory testing： https://quality.mozilla.org/2012/11/exploratory-testing-on-moztrap-job-board-posting-1/
 
 
-=== Firefox 套件 ===
+# Firefox 套件
   - 安裝 Add-on Compatibility Reporter 套件，協助回報與新版 Firefox 不相容的套件： https://addons.mozilla.org/zh-tw/firefox/addon/add-on-compatibility-reporter/
   - 如果您有套件的開發經驗，可以加入 Addon Editors 協助審核跟編輯套件精選： https://wiki.mozilla.org/AMO:Editors
 
 
-另外，當您有空也可以幫忙看看 Firefox、Thunderbird 討論區，發現使用者有發現什麼 Bug，就協助報上 Bugzilla。
+# 討論區
+另外，當您有空也可以幫忙看看 forum.moztw.org 上的 Firefox、Thunderbird 討論區，發現使用者有發現什麼 Bug，就協助報上 Bugzilla。
 
 
 如果您有任何問題、對以上任何項目感興趣，或者還不知道可以幫什麼忙，都歡迎直接回信與我聯繫。
