@@ -37,17 +37,17 @@ Mozilla 對於新手貢獻程式，有一個「Good First Bug」專案，一步�
 Rust / Servo
 ===============
 
-Rust 是 Mozilla 發起的系統程式語言，跑得比光速還快、具備記憶體區段錯誤預防與執行序安全功能。
+Rust 是 Mozilla 支持，社群主導的系統程式語言，跑得比光速還快、能在編譯時就預防記憶體錯誤、保證多執行緒時的資料安全性。
 您可以在此下載安裝、閱讀文件與了解貢獻機會： http://rust-lang.org
 
 這裡有台灣社群成員共同翻譯的 Rust 入門手冊： http://askeing.github.io/rust-book/
 你可以在此參與社群定期聚會： http://rust-lang.tw
 
 
-Servo 是 Mozilla 以 Rust 開發中的新瀏覽器引擎，更先進、更快，具備更加的多執行緒、安全、模組化、且套別考慮嵌入使用等多元情境。
-歡迎在此下載測試，並了解如何貢獻 Servo： https://servo.org
+Servo 是 Mozilla 以 Rust 開發的新瀏覽器引擎，更先進、更快，徹底的從根本的支援平行化、安全性、模組化、且特別考慮嵌入 (embedding) 等多元應用情境。
+歡迎在此下載最新的 Nightly 版，並了解如何貢獻 Servo： https://servo.org
 
-這裡整理出 Servo 初心者 issue 供您挑選： https://starters.servo.org
+這裡整理出 Servo 初心者 issue 供您挑選： https://starters.servo.org , 您若是對 Rust、HTML/CSS/JS (測試)或是 Python (CI/編譯環境)有興趣就可以輕鬆上手。
 
 
 B2G OS
