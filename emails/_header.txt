@@ -1,4 +1,4 @@
-Hi,  我們是 Mozilla 台灣社群
+Hi {%name%},  我們是 Mozilla 台灣社群
 
 歡迎您加入 Mozilla 社群的大家族。Mozilla 是為維護網路的自由與創新的非營利組織，也是 Firefox 的開發者，更是一群愛好網路的人。
 如果您想要更加了解 Mozilla，推薦您觀看以下五部短片： http://bit.ly/1kJmLV4
