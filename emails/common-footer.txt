@@ -1,0 +1,12 @@
+請先看看你對什麼比較有興趣，然後回信告訴我們，我們可以協助您更深入了解。
+
+此外，也邀請您加入以下溝通頻道，與其他對 Mozilla 開發感興趣的朋友互相交流。
+* Mozilla 中文開發者郵件群組  ( https://lists.mozilla.org/listinfo/dev-general-zh )
+* MozTW dev/add-on Telegram 頻道  ( https://moztw.org/tg )
+
+關於開發方面的問題也歡迎上 irc.mozilla.org 的 #mozilla-taiwan 頻道發問，有不少 Mozilla 台灣分公司的工程師與社群成員常駐。
+
+最後，MozTW 社群目前每週五晚上 7:30，在台北有個咖啡小聚，如果您時間上允許，也歡迎來當面跟我們聊聊，地點詳情在此： http://moztw.org/events/moztw-lab/
+
+
+MozTW, Mozilla 台灣社群
