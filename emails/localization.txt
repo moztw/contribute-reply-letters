@@ -3,10 +3,8 @@
 MozTW ( http://moztw.org/ ) 是 Mozilla 在台灣的社群，負責 Mozilla 產品的正體中文版本在地化與推廣。Mozilla 目前有下列項目可以進行在地化：
 
 - Mozilla 軟體 (Firefox、Firefox for Android、Thunderbird、Lightning、SeaMonkey)
-- Firefox OS (Gaia)
-	- 以上兩項的工作位置位於 MozTW 翻譯站 http://translate.moztw.org/
 - Mozilla 的網頁專案，介面部分 (MDN、SUMO、Persona 等等)
-	- 位於 Pontoon https://pontoon.mozilla.org/zh-TW/
+	- 以上兩項的工作位置位於 Pontoon https://pontoon.mozilla.org/zh-TW/
 - Mozilla 的網頁專案，內容部分 (MDN、SUMO 的技術文章翻譯)
 	- MDN：https://developer.mozilla.org/zh-TW/
 	- SUMO：http://support.mozilla.org/zh-TW/
