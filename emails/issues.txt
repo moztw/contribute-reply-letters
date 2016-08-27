@@ -1,6 +1,6 @@
-Hi,
+=== 疑難求助 ===
 
-我是 Mozilla 台灣社群的 Irvin，很抱歉您使用 Firefox 的時候遇到了問題。
+Hi, 我是 Mozilla 台灣社群的 Irvin，很抱歉您使用 Firefox 的時候遇到了問題。
 
 - 我們建議您可以先到 Firefox 技術支援網站，搜索看看有沒有相關的說明文件：
   https://support.mozilla.org
@@ -16,5 +16,3 @@ Hi,
   http://forum.moztw.org/viewforum.php?f=2
 
 如果還有其他問題，歡迎直接回信給我們，我們非常樂意協助你。謝謝！
-
-Irvin	  

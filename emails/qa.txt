@@ -1,80 +1,89 @@
-Hi,  我是 Mozilla 台灣社群的 Toby
-
-歡迎您加入 Mozilla 社群的大家族。Mozilla 是為維護網路的自由與創新的非營利組織，也是 Firefox 的開發者，更是一群愛好網路的人。
-如果您想要更加了解 Mozilla，推薦您觀看以下五部短片： http://bit.ly/1kJmLV4
-
-我們台灣社群*1 為了支持與實踐 Mozilla 宣言*2，而聚集在一起付出與學習。
-我們的主要任務是推廣相關理念，以及正體中文在地化工作（Firefox 及 Mozilla 相關軟體、網站的正體中文翻譯）。
-*1 MozTW  https://moztw.org
-*2 Mozilla 宣言  http://www.mozilla.org/zh-TW/about/manifesto/
-
-此頁條列整理了社群的日常工作、及需要各位貢獻的項目，歡迎查看，並且將您有興趣的部分告知我們： https://moztw.org/contribute
-也歡迎加入我們的線上聊天頻道：  http://moztw.org/tg   (moztw 頻道)
-
-如果您來自香港，我們在此也向您推介介紹香港 Mozilla 社群，歡迎看看以下幾個推廣及集人氣的 Facebook 頁面：http://fb.me/mozillahk、http://fb.me/firefoxhk
-香港社群不定期會舉行一些社群聚會，到時歡迎來聊聊啊。 
-
-
 === QA 測試專案 ===
 
-Mozilla 的 QA 工作，最簡單的貢獻方法是在日常生活中使用全系列的 Nightly 版 Firefox，並在發現問題時到 Bugzilla 回報 Bug。
-  - Firefox Nightly 下載： http://nightly.mozilla.org/
-  - Firefox 的開發頻道相關說明： http://mozlinks-zh.blogspot.com/2012/12/firefox_5.html
-  - Bugzilla 的教學影片： http://vimeo.com/9205730
-  - Bugzilla 的投影片： https://wiki.mozilla.org/images/6/6d/IntroductionToBugzilla.pdf
+Hi,  我是 Mozilla 台灣社群的 Toby
+
+Mozilla QA 團隊是一個分散在全球各地的社群，協助測試早期產品、新功能、回報 Bug、撰寫執行 test case 與自動化測試，並從可用性的角度提供建議。
+
+你可以在以下頻道上追蹤 QA 團隊最新資訊：
+
+- QMO 網站 https://quality.mozilla.org/
+- Facebook  https://www.facebook.com/pages/Mozilla-QA/122167964300
+- Twitter  https://twitter.com/mozillaqa
 
 
-Mozilla QA 團隊的主要聯絡管道（英文為主）為 IRC 與郵件群組：
-  - 您可以透過各團隊的 IRC 頻道與大家線上對談，IRC 的詳細說明請看： https://wiki.mozilla.org/IRC
-  - 當你加入郵件群組後，就會開始收到群組中其他人的信件，也可以回信與他人共同討論。加入時，建議先發一封信件自我介紹一下： http://groups.google.com/group/mozilla.dev.quality/
+# 保持聯繫
+
+Mozilla QA 團隊的主要聯絡管道（英文為主）有以下數個：
+
+- IRC  irc.mozilla.org #qa 頻道
+
+IRC 是一種線上聊天系統，詳細說明請看： https://wiki.mozilla.org/IRC
+
+- 郵件群組
+
+當你加入郵件群組後，就會開始收到群組中其他人的信件，也可以回信與他人共同討論： http://groups.google.com/group/mozilla.dev.quality/
+
+- Discourse
+
+你也可以到 Discourse 上留言與參與討論： https://discourse.mozilla-community.org/c/quality-assurance
+
+使用測試版軟體
+
+貢獻 QA 專案最簡單的方法是在日常生活中使用全系列的 Nightly 版軟體，並在發現問題時到 Bugzilla 回報 Bug。
+
+# Firefox 桌面版 & Android 版
+
+Firefox 有四個開發頻道，這是相關說明： http://mozlinks-zh.blogspot.com/2012/12/firefox_5.html
+
+請在此下載桌面與 Android 的 Firefox Nightly 測試版，並協助回報 Bug： http://nightly.mozilla.org/
+
+- 擴充套件相容性測試
+
+歡迎安裝 Add-on Compatibility Reporter 套件，協助回報與新版 Firefox 不相容的套件：  https://addons.mozilla.org/zh-tw/firefox/addon/add-on-compatibility-reporter/
+
+- 擴充套件編輯團隊
+
+如果您有套件的開發經驗，可以加入 Addon Editors 協助審核跟編輯套件精選： https://wiki.mozilla.org/AMO:Editors
+
+- Test Pilot
+
+您可以在桌面版 Firefox 上安裝 Test Pilot 套件，協助測試 Firefox 的開發中未來新功能： https://testpilot.firefox.com/
+
+- MozTrap
+
+在 MozTrap 上有很多設計好的測試，歡迎參照說明一一進行：
+  https://moztrap.mozilla.org/results/runs/
+
+- MDN
+
+MDN 上有很多 QA 相關的技術文件，可供參考：
+ https://developer.mozilla.org/zh-TW/docs/Mozilla/QA
 
 
-Mozilla QA 的專案平台為 QMO，上面提供各專案 QA 相關資訊，請先閱讀，並可按照說明直接聯繫、加入相關管道以參與： https://quality.mozilla.org/docs/misc/how-can-i-help-test/
+# Firefox for iOS
+
+你可以在此網站登記參加 iOS 版 Firefox 的測試：  https://www.mozilla.org/en-US/firefox/ios/testflight/
 
 
-# One and Done
+# Firefox 與 Thunderbird 中文討論區
 
-QA 團隊的 One and Done 系統，可以讓你按照擁有的空閒時間，提供各種不同的任務讓你執行。歡迎在有空時登入 One and Done 並且按照說明解任務： https://oneanddone.mozilla.org/
-（如果在測試中途發現問題時，請記得寫信（英文）給到每個任務的負責人喔） 
+當您有空也可以幫忙看看 forum.moztw.org 上的 Firefox、Thunderbird 討論區，與 Ptt 的 Browser 版。當發現使用者有發現什麼 Bug 時，歡迎在 Telegram MozTW 頻道討論，或協助報上 Bugzilla。
 
-
-以下是 Mozilla 各產品的個別 QA 資訊與管道
-
-
-# Desktop Firefox
-  - 安裝 Nightly 測試版，並協助回報 Bug： http://nightly.mozilla.org/
-  - 安裝 Test Pilot 並參與不定期使用者問卷： https://testpilot.mozillalabs.com/
-  - 參加每週五的全球 Testday： https://quality.mozilla.org/tag/test-day/
-  - 加入 IRC 的 #qa 頻道
-  - 追蹤 dev-quality 郵件群組： https://lists.mozilla.org/listinfo/dev-quality
-
-
-# Android Firefox
-  - 使用 Nightly 版、協助回報 Bug： https://quality.mozilla.org/docs/mobile-firefox/how-to-install-fennec-nightly-builds/
-  - 追蹤 QA 郵件群組： https://mail.mozilla.org/listinfo/android-mobile-nightly-testers
+- MozTW 討論區： https://forum.moztw.org
+- 加入 Telegram 頻道： http://moztw.org/tg (moztw 頻道)
 
 
 # 網頁 WebQA
-  - 掛 IRC #mozwebqa
-  - 作 exploratory testing： https://quality.mozilla.org/2012/11/exploratory-testing-on-moztrap-job-board-posting-1/
 
+WebQA 專案負責維護 Mozilla 各網站的品質，在此瞭解更多參與資訊：
+https://quality.mozilla.org/teams/web-qa/
 
-# Firefox 套件
-  - 安裝 Add-on Compatibility Reporter 套件，協助回報與新版 Firefox 不相容的套件： https://addons.mozilla.org/zh-tw/firefox/addon/add-on-compatibility-reporter/
-  - 如果您有套件的開發經驗，可以加入 Addon Editors 協助審核跟編輯套件精選： https://wiki.mozilla.org/AMO:Editors
+- WebQA 團隊的 IRC 頻道是 #mozwebqa
 
+- 到 One and Done 上執行適合的工作   https://oneanddone.mozilla.org/team/6/
 
-# 討論區
-另外，當您有空也可以幫忙看看 forum.moztw.org 上的 Firefox、Thunderbird 討論區，發現使用者有發現什麼 Bug，就協助報上 Bugzilla。
+- 最適合新手試試的 exploratory testing   https://quality.mozilla.org/2012/11/exploratory-testing-on-moztrap-job-board-posting-1/
 
+- 自動化測試的 MDN 文件： https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_Web_QA_automated_tests
 
-如果您有任何問題、對以上任何項目感興趣，或者還不知道可以幫什麼忙，都歡迎直接回信與我聯繫。
-
-也邀請你訂閱我們的電子郵件群組，與社群的成員一起討論、分享您的想法與點子。訂閱之後，您就會開始收到大家互相討論的 email。加入群組之後歡迎發封信跟大家打個招呼喔！
-https://groups.google.com/group/moztw-general 
-
-最後，MozTW 社群目前每週五晚上 7:30，在台北有個咖啡小聚，如果您時間上允許，也歡迎來當面跟我們聊聊，地點詳情在此： http://moztw.org/events/moztw-lab/
-
-
-Toby
-MozTW, Mozilla 台灣社群
+- 自動化測試 Wiki  https://wiki.mozilla.org/QA/Execution/Web_Testing/Automation
