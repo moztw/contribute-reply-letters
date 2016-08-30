@@ -32,15 +32,14 @@ https://addons.mozilla.org/zh-TW/developers/docs/themes
 請到附加元件開發者中心看看，那邊有開發文件、工具、以及如何與其他開發者交流的資訊：
 https://addons.mozilla.org/developers/
 
-關於套件開發方面，Mozilla 近年主打簡單好用的 JS 架構 Add-on SDK。包含線上的 IDE Add-on Builder 與離線的 Add-on SDK。這是打造附加元件最快、最簡便的方式：
-https://addons.mozilla.org/developers/builder
+關於套件開發方面，目前可以選擇 WebExtensions 或 Add-on SDK 這兩種：
+https://developer.mozilla.org/en-US/Add-ons
 
-如果要開始下手，歡迎閱讀以下文章：
-Mozilla Links 正體中文版: 摩茲動手做（二）用 Add-on SDK 寫簡單的 Firefox 套件
-http://mozlinks-zh.blogspot.com/2012/08/add-on-sdk-firefox.html
+用 WebExtensions 寫一個套件：
+https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Your_first_WebExtension
 
-這裡有兩部簡介 Addon SDK 的短片，帶您 Step-by-step 開發一個套件：
-http://www.youtube.com/playlist?list=PLOHV-5SHjI8gG_T8XdWPLP26-1zb5cY_x
+用 Add-on SDK 寫一個套件：
+https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_(jpm)
 
 您也可以到附加元件討論區張貼問題，找到其他的附加元件開發者：
 https://forums.mozilla.org/addons/
