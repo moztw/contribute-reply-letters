@@ -11,5 +11,5 @@ python compose.py <name> -i <interest areas>
 e.g. 
 
 ```
-python compose.py "Harry Potter" -i addon education qa
+python compose.py "Harry Potter" -i addons education qa
 ```
