@@ -32,7 +32,7 @@ https://addons.mozilla.org/zh-TW/developers/docs/themes
 請到附加元件開發者中心看看，那邊有開發文件、工具、以及如何與其他開發者交流的資訊：
 https://addons.mozilla.org/developers/
 
-關於套件開發方面，目前可以選擇 WebExtensions 或 Add-on SDK 這兩種：
+目前 Firefox 上可以選擇 WebExtensions 或 Add-on SDK 這兩種架構來開發套件：
 https://developer.mozilla.org/en-US/Add-ons
 
 用 WebExtensions 寫一個套件：
