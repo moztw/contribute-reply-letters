@@ -22,7 +22,7 @@ https://addons.mozilla.org/firefox/collections/
 # 設計佈景主題
 
 佈景主題讓您能自訂您 Firefox 的外觀。如果要建立您自己的佈景主題，請從此處下手：
-https://addons.mozilla.org/zh-TW/developers/docs/themes
+https://developer.mozilla.org/en-US/Add-ons/Themes/Lightweight_themes
 
 
 如果您更懂一點技術的東西，也可以試試下面幾件事
@@ -32,20 +32,20 @@ https://addons.mozilla.org/zh-TW/developers/docs/themes
 請到附加元件開發者中心看看，那邊有開發文件、工具、以及如何與其他開發者交流的資訊：
 https://addons.mozilla.org/developers/
 
-目前 Firefox 上可以選擇 WebExtensions 或 Add-on SDK 這兩種架構來開發套件：
-https://developer.mozilla.org/en-US/Add-ons
+目前 Firefox 上可以用 WebExtensions 來開發套件：
+https://developer.mozilla.org/en-US/Add-ons/WebExtensions
 
 用 WebExtensions 寫一個套件：
 https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Your_first_WebExtension
 
-用 Add-on SDK 寫一個套件：
-https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_(jpm)
+這邊有一些範例套件：
+https://github.com/mdn/webextensions-examples
 
 您也可以到附加元件討論區張貼問題，找到其他的附加元件開發者：
 https://forums.mozilla.org/addons/
+
 或在 MozTW 討論區擴充套件版，與其他華文的開發者與用戶進行交流：
 http://forum.moztw.org/viewforum.php?f=11
-
 
 # 幫助測試附加元件
 
