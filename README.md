@@ -1,7 +1,7 @@
 Contribution Letter Template
 ----------------------------------
 
-#Setting up
+# Setting up
 
 http://gspread.readthedocs.io/en/latest/oauth2.html
 * Go to Google Developer Console
