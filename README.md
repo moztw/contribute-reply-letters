@@ -1,7 +1,24 @@
 Contribution Letter Template
 ----------------------------------
 
-# Setting up
+# Fully automatic version
+## Setting up
+* Install Python2
+* `pip install pytest` (You may consider using virtualenv)
+
+## How it works
+* The `src/mailer.py` is a AWS lambda code, it is responsible for generating the email content and send it through AWS SES service.
+* The HTML form in `form/index.html` sends a POST request to the AWS API Gateway.
+* The API Gateway triggers a the `src/mailer.py` lambda and generates the email.
+
+## Testing
+* To test the AWS lambda locally, run `py.test tests`.
+* All the unit/integration tests are in `tests/test_mailer.py`.
+
+-----
+
+# Google Spreadsheet + Offline version (deprecated)
+## Setting up
 
 http://gspread.readthedocs.io/en/latest/oauth2.html
 * Go to Google Developer Console
@@ -15,7 +32,7 @@ http://gspread.readthedocs.io/en/latest/oauth2.html
 * `virtualenv _venv; source _venv/bin/activate`
 * `pip install gspread oauth2client pytest`
 
-# Usage
+## Usage
 
 * Generate letters
 ```
@@ -35,7 +52,7 @@ python compose.py "Harry Potter" -i addons education qa
 python get_gspreadsheet_data.py <YYYY-mm-dd-HH:MM:SS>
 ```
 
-# Unit test
+## Unit test
 * `source _venv/bin/activate`
 * `python -m pytest`
 
