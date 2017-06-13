@@ -5,10 +5,11 @@ import boto3
 
 ses = boto3.client('ses')
 
-email_from = 'CHANGE_ME'
+# TODO: split this into a config file
+email_from = 'community@mozilla.org'
 email_to = 'CHANGE_ME'
 email_cc = ''
-emaiL_subject = 'MozTW Volunteer test'
+email_subject = 'Welcome to Mozilla'
 email_body = 'Hello '
 
 
@@ -20,11 +21,11 @@ def lambda_handler(event, context):
     # return event['key1']  # Echo back the first key value
     #raise Exception('Something went wrong')
     print()
-    send_email(event['email'], event['name'])
+    send_email(ses, event['email'], event['name'])
 
 
-def send_email(email_to, name):
-    response = ses.send_email(
+def send_email(ses_service, email_to, name):
+    response = ses_service.send_email(
         Source = email_from,
         Destination={
             'ToAddresses': [
@@ -36,7 +37,7 @@ def send_email(email_to, name):
         },
         Message={
             'Subject': {
-                'Data': emaiL_subject
+                'Data': email_subject
             },
             'Body': {
                 'Text': {
