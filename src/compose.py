@@ -1,4 +1,21 @@
 # Depends on src/email_contents.py
+interests = [
+    'addons',
+    'coding',
+    'design',
+    'documentation',
+    'education',
+    'infos',
+    'issues',
+    'localization',
+    'marketing',
+    'other',
+    'qa',
+    'suggestions',
+    'support',
+    'webdev'
+]
+
 def format_body(name, interests):
     body = []
 
