@@ -1,9 +1,5 @@
-#!/usr/bin/env python2
-
-import argparse
-
-header_path = '../emails/_header.txt'
-footer_path = '../emails/_footer.txt'
+header_path = './emails/_header.txt'
+footer_path = './emails/_footer.txt'
 interests = [
     'addons',
     'coding',
@@ -22,37 +18,22 @@ interests = [
 ]
 
 
-def compose(name, interests):
+def format_body(name, interests):
     body = []
 
     # TODO: we should probably use some template solution
-    with open(header_path, 'rb') as f:
+    with open(header_path, 'r') as f:
         header = f.read()
+    {% raw %}
     body.append(header.replace('{%name%}', name))
+    {% endraw %}
 
     for section in interests:
-        with open('../emails/{0}.txt'.format(section), 'rb') as f:
+        with open('../emails/{0}.txt'.format(section), 'r') as f:
             body.append(f.read())
 
-    with open(footer_path, 'rb') as f:
+    with open(footer_path, 'r') as f:
         footer = f.read()
     body.append(footer)
 
-    print("\n".join(body))
-
-
-def main():
-
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument('name', action='store',
-                        help='Contributor\'s name')
-    parser.add_argument('-i', '--interests', nargs='*', choices=interests,
-                        default=[], help='field of interests')
-
-    results = parser.parse_args()
-
-    compose(results.name, results.interests)
-
-if __name__ == "__main__":
-    main()
+    return "\n".join(body)

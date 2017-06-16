@@ -1,4 +1,4 @@
-build: src/build.py src/template_mailer.jinja.py
+build: src/build.py src/template_mailer.jinja.py src/compose.py
 	. venv/bin/activate; \
 	cd src; python build.py;
 

@@ -3,10 +3,15 @@ from unittest.mock import Mock
 sys.modules['boto3'] = Mock()
 from src import mailer
 
-class MockBoto3():
-    def send_email(Source, Destination, Message):
-        print("Source")
-        assert Source == "bar"
+def generate_no_interest_mail_body(name):
+    with open('./emails/_header.txt', 'r') as f:
+        header = f.read()
+    with open('./emails/_footer.txt', 'r') as f:
+        footer = f.read()
+    content = header + "\n" +  footer
+    content = content.replace('{%name%}', name)
+    return content
+
 
 def test_send_email():
     # ses = MockBoto3()
@@ -14,7 +19,10 @@ def test_send_email():
     from_email = "community@mozilla.org" # TODO:?
     subject = "Welcome to Mozilla"
     name = "Foo Bar"
+
     content = "Hello Foo Bar"
+    # content = generate_no_interest_mail_body(name)
+
 
     ses = Mock()
     mailer.send_email(ses, to_email, name)
@@ -24,3 +32,10 @@ def test_send_email():
         Message={'Subject': {'Data': subject},
                  'Body': {'Text': {'Data': content}}},
         Source=from_email)
+
+def test_format_body():
+    name = "Foo Bar"
+    interests = []
+    content = generate_no_interest_mail_body(name)
+
+    assert mailer.format_body(name, interests) == content
