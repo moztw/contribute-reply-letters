@@ -39,3 +39,10 @@ def test_format_body():
     content = generate_no_interest_mail_body(name)
 
     assert mailer.format_body(name, interests) == content
+
+def test_content_variables():
+    for key, val in mailer.contents.items():
+        assert type(key) is str
+        assert type(val) is str
+        assert len(key) > 0
+        assert len(val) > 0

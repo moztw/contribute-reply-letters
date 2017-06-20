@@ -1,39 +1,12 @@
-header_path = './emails/_header.txt'
-footer_path = './emails/_footer.txt'
-interests = [
-    'addons',
-    'coding',
-    'design',
-    'documentation',
-    'education',
-    'infos',
-    'issues',
-    'localization',
-    'marketing',
-    'other',
-    'qa',
-    'suggestions',
-    'support',
-    'webdev'
-]
-
-
+# Depends on src/email_contents.py
 def format_body(name, interests):
     body = []
 
     # TODO: we should probably use some template solution
-    with open(header_path, 'r') as f:
-        header = f.read()
     {% raw %}
-    body.append(header.replace('{%name%}', name))
+    body.append(contents['_header'].replace('{%name%}', name))
     {% endraw %}
 
-    for section in interests:
-        with open('../emails/{0}.txt'.format(section), 'r') as f:
-            body.append(f.read())
-
-    with open(footer_path, 'r') as f:
-        footer = f.read()
-    body.append(footer)
+    body.append(contents['_footer'])
 
     return "\n".join(body)
