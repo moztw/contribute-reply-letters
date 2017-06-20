@@ -7,6 +7,9 @@ def format_body(name, interests):
     body.append(contents['_header'].replace('{%name%}', name))
     {% endraw %}
 
+    for interest in interests:
+        body.append(contents[interest])
+
     body.append(contents['_footer'])
 
-    return "\n".join(body)
+    return '\n'.join(body)

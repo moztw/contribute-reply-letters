@@ -12,6 +12,18 @@ def generate_no_interest_mail_body(name):
     content = content.replace('{%name%}', name)
     return content
 
+def generate_interest_mail_body(name):
+    with open('./emails/_header.txt', 'r') as f:
+        header = f.read()
+    with open('./emails/addons.txt', 'r') as f:
+        addons = f.read()
+    with open('./emails/issues.txt', 'r') as f:
+        issues = f.read()
+    with open('./emails/_footer.txt', 'r') as f:
+        footer = f.read()
+    content = header + "\n" + addons + "\n" + issues + "\n" + footer
+    content = content.replace('{%name%}', name)
+    return content
 
 def test_send_email():
     # ses = MockBoto3()
@@ -22,7 +34,6 @@ def test_send_email():
 
     content = "Hello Foo Bar"
     # content = generate_no_interest_mail_body(name)
-
 
     ses = Mock()
     mailer.send_email(ses, to_email, name)
@@ -46,3 +57,10 @@ def test_content_variables():
         assert type(val) is str
         assert len(key) > 0
         assert len(val) > 0
+
+def test_format_body_with_interests():
+    name = "Foo Bar"
+    interests = ['addons', 'issues']
+    content = generate_interest_mail_body(name)
+
+    assert mailer.format_body(name, interests) == content
