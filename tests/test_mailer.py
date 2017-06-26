@@ -3,10 +3,27 @@ from unittest.mock import Mock
 sys.modules['boto3'] = Mock()
 from src import mailer
 
-class MockBoto3():
-    def send_email(Source, Destination, Message):
-        print("Source")
-        assert Source == "bar"
+def generate_no_interest_mail_body(name):
+    with open('./emails/_header.txt', 'r') as f:
+        header = f.read()
+    with open('./emails/_footer.txt', 'r') as f:
+        footer = f.read()
+    content = header + "\n" +  footer
+    content = content.replace('{%name%}', name)
+    return content
+
+def generate_interest_mail_body(name):
+    with open('./emails/_header.txt', 'r') as f:
+        header = f.read()
+    with open('./emails/addons.txt', 'r') as f:
+        addons = f.read()
+    with open('./emails/issues.txt', 'r') as f:
+        issues = f.read()
+    with open('./emails/_footer.txt', 'r') as f:
+        footer = f.read()
+    content = header + "\n" + addons + "\n" + issues + "\n" + footer
+    content = content.replace('{%name%}', name)
+    return content
 
 def test_send_email():
     # ses = MockBoto3()
@@ -14,7 +31,9 @@ def test_send_email():
     from_email = "community@mozilla.org" # TODO:?
     subject = "Welcome to Mozilla"
     name = "Foo Bar"
+
     content = "Hello Foo Bar"
+    # content = generate_no_interest_mail_body(name)
 
     ses = Mock()
     mailer.send_email(ses, to_email, name)
@@ -24,3 +43,24 @@ def test_send_email():
         Message={'Subject': {'Data': subject},
                  'Body': {'Text': {'Data': content}}},
         Source=from_email)
+
+def test_format_body():
+    name = "Foo Bar"
+    interests = []
+    content = generate_no_interest_mail_body(name)
+
+    assert mailer.format_body(name, interests) == content
+
+def test_content_variables():
+    for key, val in mailer.contents.items():
+        assert type(key) is str
+        assert type(val) is str
+        assert len(key) > 0
+        assert len(val) > 0
+
+def test_format_body_with_interests():
+    name = "Foo Bar"
+    interests = ['addons', 'issues']
+    content = generate_interest_mail_body(name)
+
+    assert mailer.format_body(name, interests) == content

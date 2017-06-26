@@ -3,8 +3,8 @@ Contribution Letter Template
 
 # Fully automatic version
 ## Setting up
-* Install Python2
-* `pip install pytest` (You may consider using virtualenv)
+* Install Python 3 (I use 3.4)
+* `pip install pytest` (You may consider using virtualenv: `virtualenv venv -p python3; source venv/bin/activate`)
 
 ## How it works
 * The `src/mailer.py` is a AWS lambda code, it is responsible for generating the email content and send it through AWS SES service.
@@ -12,7 +12,7 @@ Contribution Letter Template
 * The API Gateway triggers a the `src/mailer.py` lambda and generates the email.
 
 ## Testing
-* To test the AWS lambda locally, run `py.test tests`.
+* To test the AWS lambda locally, run `python -m pytest tests`.
 * All the unit/integration tests are in `tests/test_mailer.py`.
 
 -----
