@@ -15,6 +15,71 @@ Contribution Letter Template
 * To test the AWS lambda locally, run `python -m pytest tests`.
 * All the unit/integration tests are in `tests/test_mailer.py`.
 
+# Setting up the AWS server
+* Create an AWS account
+* Switch the region to US West (Oregon), or other region that supports SES (email) service.
+## Lmabda
+* Services => AWS Lambda
+* Create a Lambda function
+* Select the "hello-world-python3" template
+* Select the "API Gateway" as the trigger
+  * API name: "ReplyEmail"
+  * Security: "Open"
+* In the Configure function page
+  * Name: ReplyEmail
+  * Description: Send an email based on contributor's interest
+  * Runtime: Python 3.6
+  * Copy the generated code into the "Lambda function code" section
+  * Role: Create a custom role => A new IAM management page will pop up
+    * IAM Role: create a new IAM Role
+    * Role Name: lmabda_email
+    * Show Policy Document => Edit => Paste the following:
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    },
+{
+       "Effect": "Allow",
+       "Action": ["ses:SendEmail", "ses:SendRawEmail"],
+       "Resource":"*"
+     }
+  ]
+}
+```
+
+## API Gateway
+* Services => API Gateway
+* Select `/ReplyEmail`, click "Actions" => Create Method => Select POST
+* In the POST setting
+  * Integration type: Lambda function
+  * Lambda Region: us-west-2 (Oregon)
+  * Lambda Function: "ReplyEmail"
+* Select `/ReplyEmail` => Actions => Enable CORS
+* Select `/ReplyEmail` => Actions => Deploy API
+* (optional) Delete the auto-generated "ANY" method by selecting it => Actions => Delete Method
+
+* You'll see an "Invoke URL", you can now test it with:
+
+```
+curl \
+  -H "Content-Type: application/json" \
+  -X POST \
+  -d '{"name":"foo","email":"shing.lyu@gmail.com"}' \
+  https://XXXXXXXX.execute-api.us-west-2.amazonaws.com/prod/ReplyEmail
+```
+
+
+
+
 -----
 
 # Google Spreadsheet + Offline version (deprecated)
