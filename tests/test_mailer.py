@@ -29,6 +29,7 @@ def test_send_email():
     # ses = MockBoto3()
     to_email = "foo@bar.com"
     from_email = "community@mozilla.org" # TODO:?
+    cc_email = "cc@mozilla.org" # TODO:?
     subject = "Test Subject"
     name = "Foo Bar"
 
@@ -36,10 +37,10 @@ def test_send_email():
     # content = generate_no_interest_mail_body(name)
 
     ses = Mock()
-    mailer.send_email(ses, from_email, to_email, subject, body)
+    mailer.send_email(ses, from_email, to_email, cc_email, subject, body)
     # ses.send_email.assert_called("foo")
     ses.send_email.assert_called_with(
-        Destination = {'ToAddresses': [to_email]},
+        Destination = {'ToAddresses': [to_email], 'CcAddresses': [cc_email]},
         Message={'Subject': {'Data': subject},
                  'Body': {'Text': {'Data': body}}},
         Source=from_email)
@@ -77,8 +78,9 @@ def test_lambda_handler():
     mailer.lambda_handler(event, {});
 
     mailer.send_email.assert_called_with(mailer.ses,
-                                         'community@mozilla.org',
+                                         'contribute@moztw.org',
                                          'foo@bar.com',
+                                         'contribute@moztw.org',
                                          'Hello from Mozilla',
                                          ANY)
     # TODO: We haven't check the email body

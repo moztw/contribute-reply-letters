@@ -17,20 +17,21 @@ def lambda_handler(event, context):
     send_email(ses,
                email_from,
                event['email'],
+               email_cc,
                email_subject,
                format_body(event['name'], event['interests']))
 
 
-def send_email(ses_service, email_from, email_to, subject, body):
+def send_email(ses_service, email_from, email_to, email_cc, subject, body):
     response = ses_service.send_email(
         Source = email_from,
         Destination={
             'ToAddresses': [
                 email_to,
             ],
-            #'CcAddresses': [
-            #    email_cc,
-            #]
+            'CcAddresses': [
+                email_cc,
+            ]
         },
         Message={
             'Subject': {
