@@ -18,7 +18,8 @@ Contribution Letter Template
 # Setting up the AWS server
 * Create an AWS account
 * Switch the region to US West (Oregon), or other region that supports SES (email) service.
-## Lmabda
+
+## Lambda
 * Services => AWS Lambda
 * Create a Lambda function
 * Select the "hello-world-python3" template
@@ -77,8 +78,10 @@ curl \
   https://XXXXXXXX.execute-api.us-west-2.amazonaws.com/prod/ReplyEmail
 ```
 
-
-
+## SES
+* To test, go to SES service => Identity Management-Email Addresses => Verify a new email address.
+* If you want to enable emailing to arbitrary email address, submit a ticket to get out of the sandbox.
+* Consider cc the email to one of your own email, so you can track who submitted the form.
 
 -----
 
